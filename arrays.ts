@@ -1,6 +1,8 @@
 // Given an array of integers,
 // return indices of the two numbers such that they add up to a specific target
 
+/*
+
 function twoSum(nums: number[], target: number): number[] | null {
     const numMap: Map<number, number> = new Map();
     for (let i = 0; i < nums.length; i++) {
@@ -24,4 +26,16 @@ if (result !== null) {
     console.log(`Indices of the two numbers: ${index1}, ${index2}`);
 } else {
     console.log("No solution found.");
+
 }
+*/
+
+
+
+// some more 
+
+const students = ["Sudeep", "Sunil ", "Swastika"];
+
+
+
+
