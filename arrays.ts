@@ -42,9 +42,27 @@ console.log(duplicate([1,2,3,4]));
 // Q. Write a function that removes duplicates from an array.
 // ================================================================================================
 
-
 function removeDuplicates(arr : number[]){
     return [ ... new Set(arr)];
 }
-
 console.log("Removed duplicate elements successfully :",removeDuplicates([1,2,2,3,4,1,2,4,5,1,3,4,5,1,3,4]));
+
+
+
+// ====================================================================================================
+// Q.Given an array containing numbers from 1 to N, with one number missing, find the missing number.
+// ====================================================================================================
+
+const arr : number[] = [1,2,3,4,6];
+
+function findMissingNum(arr : number[]){
+    const n = arr.length + 1 ;
+    const sum = (n * (n+1) ) / 2; 
+
+    const arrSum = arr.reduce((a, c) => a + c , 0);
+
+    return sum - arrSum;
+}
+
+console.log("The missing number is : ",findMissingNum(arr));
+;
