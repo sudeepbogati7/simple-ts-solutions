@@ -45,3 +45,23 @@ c.add(13);
 console.log(c.retrieve()); //The counter is currently at : 18
 ;
 
+// ================================================================================================
+// Write a function that finds the longest word in a sentence.
+// ================================================================================================
+
+const sentence: string = "Hi , my name is Sudeep Bogati. I am from Kathmandu.";
+
+function findLongestWord(sentence : string){
+    const words  = sentence.split(" ");
+    let longestWord : string = '';
+
+    for(let i =0; i< words.length ; i++){
+        if(words[i].length > longestWord.length){
+            longestWord = words[i];
+        }
+    }
+    return longestWord;    
+}
+console.log( "The longest word in --> %s <--is : ",sentence,findLongestWord(sentence));
+
+

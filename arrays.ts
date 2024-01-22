@@ -1,8 +1,6 @@
 // Given an array of integers,
 // return indices of the two numbers such that they add up to a specific target
 
-/*
-
 function twoSum(nums: number[], target: number): number[] | null {
     const numMap: Map<number, number> = new Map();
     for (let i = 0; i < nums.length; i++) {
@@ -28,14 +26,25 @@ if (result !== null) {
     console.log("No solution found.");
 
 }
-*/
+
+//----------------------------------------------------------------------------------------------------------------
+//---------- duplicate elements of an array -----------------------------------------
+//----------------------------------------------------------------------------------------------------------------
+
+function duplicate(arr : number[]) : number[]{
+    return arr.concat(arr);
+}
+
+console.log(duplicate([1,2,3,4]));
 
 
-
-// some more 
-
-const students = ["Sudeep", "Sunil ", "Swastika"];
-
+// ================================================================================================
+// Q. Write a function that removes duplicates from an array.
+// ================================================================================================
 
 
+function removeDuplicates(arr : number[]){
+    return [ ... new Set(arr)];
+}
 
+console.log("Removed duplicate elements successfully :",removeDuplicates([1,2,2,3,4,1,2,4,5,1,3,4,5,1,3,4]));
